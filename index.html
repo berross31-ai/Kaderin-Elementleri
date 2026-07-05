@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaderin Elementleri</title>
     
-    <!-- Senin seçtiğin Playfair Display fontu buraya eklendi -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
@@ -41,14 +41,14 @@
         }
 
         h1 {
-            /* Fontu buraya ekledik */
             font-family: 'Playfair Display', serif;
             font-size: 3.5rem;
             margin-bottom: 2rem;
             letter-spacing: 2px;
             color: #fff;
-            border-bottom: 3px solid #ffd700;
-            padding-bottom: 7px; 
+            /* Koyu Kırmızı Çizgi ve !important eklendi */
+            border-bottom: 5px solid #8B0000 !important;
+            padding-bottom: 10px;
         }
 
         .menu-buttons {
@@ -74,8 +74,8 @@
         }
 
         button:hover {
-            background: #e94560;
-            border-color: #e94560;
+            background: #8B0000;
+            border-color: #8B0000;
             transform: scale(1.08);
             box-shadow: 0 10px 20px rgba(0,0,0,0.3);
         }
@@ -86,9 +86,9 @@
     <div id="game-container">
         <h1>Kaderin Elementleri</h1>
         <div class="menu-buttons">
-            <button onclick="alert('Tek Oyuncu modu yakında..')">Tek Oyuncu</button>
-            <button onclick="alert('İki Oyuncu modu yakında..')">İki Oyuncu</button>
-            <button onclick="alert('Grup modu yakında..')">İkiden Fazla Grup</button>
+            <button onclick="alert('Tek Oyuncu modu yakında!')">Tek Oyuncu</button>
+            <button onclick="alert('İki Oyuncu modu yakında!')">İki Oyuncu</button>
+            <button onclick="alert('Grup modu yakında!')">İkiden Fazla Grup</button>
         </div>
     </div>
 

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaderin Elementleri</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            background-color: #1a1a2e;
+        }
+
+        #game-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+            /* AŞAĞIDAKİ SATIRDAKİ FOTOĞRAF ADINI DEĞİŞTİRDİN Mİ? */
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)), url('Başlıksız218_20260705210616.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 2rem;
+            letter-spacing: 2px;
+            color: #fff;
+            border-bottom: 3px solid #e94560;
+            padding-bottom: 10px;
+        }
+
+        .menu-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 18px 50px;
+            font-size: 1.3rem;
+            cursor: pointer;
+            background: rgba(255, 255, 255, 0.15);
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            color: white;
+            border-radius: 50px;
+            transition: all 0.4s ease;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+            backdrop-filter: blur(5px);
+        }
+
+        button:hover {
+            background: #e94560;
+            border-color: #e94560;
+            transform: scale(1.08);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="game-container">
+        <h1>Kaderin Elementleri</h1>
+        <div class="menu-buttons">
+            <button onclick="alert('Tek Oyuncu modu yakında!')">Tek Oyuncu</button>
+            <button onclick="alert('İki Oyuncu modu yakında!')">İki Oyuncu</button>
+            <button onclick="alert('Grup modu yakında!')">İkiden Fazla Grup</button>
+        </div>
+    </div>
+
+</body>
+</html>
+
